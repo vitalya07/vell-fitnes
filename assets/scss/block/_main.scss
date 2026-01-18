@@ -1,0 +1,62 @@
+.main {
+    padding: 41px 60px 120px 60px;
+    &__bg {
+        position: relative;
+        height: 500px;
+        width: 1800px;
+        margin: 0 auto;
+        background-image: url('../img/banner.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &__title {
+        position: absolute;
+        top: 83px;
+        left: 203px;
+        @include fontBlack;
+        font-size: 24px;
+        line-height: 110.00000000000001%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: $colorRed;
+    }
+    &__subtitle {
+        @include fontBlack;
+        font-size: 49.55px;
+        line-height: 110.00000000000001%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: $colorBlack;
+        width: 100%;
+        max-width: 512px;
+        position: absolute;
+        top: 133px;
+        left: 203px;
+        & > span {
+            @include fontRegular;
+        }
+    }
+    &__btn {
+        width: 150px;
+        height: 42px;
+        opacity: 1;
+        border-radius: 4px;
+        gap: 10px;
+        padding: 12px 20px 13px 20px;
+        border: 1px solid $colorRed;
+        @include flexCenter;
+        color: $colorRed;
+        @include fontBold;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;        
+        position: absolute;
+        left: 203px;
+        bottom: 80px;
+        transition: all .4s ease;
+        &:hover {
+            box-shadow: 1px 1px 10px $colorRed;
+        }
+    }
+}
