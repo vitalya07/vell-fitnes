@@ -1,0 +1,152 @@
+.subheader {
+    padding: 20px 0;
+    border-top: 1px solid #858FA426;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__searchs {
+        display: flex;
+        align-items: center;
+        justify-items: start;
+        gap: 50px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -30px;
+            width: 1px;
+            height: 40px;
+            background-color: #858FA426;
+        }
+        &-menu {
+            background-color: $colorRed;
+            width: 127px;
+            height: 49px;
+            opacity: 1;
+            gap: 6px;
+            padding-top: 12px;
+            padding-right: 20px;
+            padding-bottom: 13px;
+            padding-left: 20px;
+            border-radius: 4px;
+            &:hover {
+                background-color: $colorRedHover;
+            }
+        }
+    }
+    &__menu {
+        display: flex;
+        @include flexCenter;
+        gap: 8px;
+        &-img {
+            width: 16px;
+            height: 16px;
+            object-fit: cover;
+        }
+        &-text {
+            @include fontBold;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            color: $colorWhite;
+        }
+    }
+    &__nav {
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            & > li {
+                padding: 12px 14px 13px 14px;
+                & > a {
+                    @include fontRegular;
+                    font-size: 14px;
+                    line-height: 140%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    color: $colorWhite;
+                    transition: all .4s ease;
+                    &:hover {
+                        color: $colorRed;
+                    }
+                }   
+            }
+        }
+    }
+    &__elements {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        position: relative;
+        gap: 30px;
+        &-comparison {
+            position: relative;
+            &--count {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                border-radius: 100%;
+                width: 16px;
+                height: 16px;
+                background-color: $colorRed;
+                @include flexCenter;
+                @include fontRegular;
+                font-size: 10px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: middle;
+                color: $colorWhite;
+            }
+        }
+        &-favorites {
+            position: relative;
+            &--count {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                border-radius: 100%;
+                width: 16px;
+                height: 16px;
+                background-color: $colorRed;
+                @include flexCenter;
+                @include fontRegular;
+                font-size: 10px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: middle;
+                color: $colorWhite;
+            }
+        }
+        &-cart {
+             &--count {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                border-radius: 100%;
+                width: 16px;
+                height: 16px;
+                background-color: $colorRed;
+                @include flexCenter;
+                @include fontRegular;
+                font-size: 10px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: middle;
+                color: $colorWhite;
+            }
+        }
+        &-item {
+            cursor: pointer;
+            &--icon {
+                object-fit: cover;
+            }            
+        }
+       
+    }
+}
