@@ -1,0 +1,98 @@
+.exerciser {
+    padding: 0 0 120px 0;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        gap: 30px;   
+        margin-bottom: 30px;
+    }
+    &__item {
+        position: relative;
+        width: 330px;
+        &-1  {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        &-2  {
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        &-3  {
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        &-4  {
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        &-img {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            & > img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }       
+        &-title {
+            position: absolute;
+            top: 35px;
+            left: 30px;
+            @include fontBold;
+            font-size: 20px;
+            line-height: 120%;
+            letter-spacing: 0%;
+            color: $colorWhite;
+            width: 100%;
+            max-width: 100px;
+            &--black {
+                color: $colorBlack;
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &-item {
+            position: relative;
+            &--title {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                @include fontBold;
+                font-size: 20px;
+                line-height: 120%;
+                letter-spacing: 0%;
+                color: $colorBlack;
+                width: 100%;
+                max-width: 150px;
+            }
+        }
+    }
+    &__link {
+        display: block;
+        width: 142px;
+        height: 42px;
+        opacity: 1;
+        padding: 12px 15px 12px 15px;
+        border-radius: 4px;
+        border: 1px solid $colorRed;
+        @include flexCenter;
+        @include fontBold;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $colorRed;
+        transition: all .4s ease;
+        &:hover {
+            box-shadow: 0 0 10px $colorRed;
+        }
+    }
+}

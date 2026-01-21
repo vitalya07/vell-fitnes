@@ -11,3 +11,10 @@
     width: 397px;
     height: 30px;
 }
+.title {
+    @include fontBold;
+    font-size: 30px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: $colorBlack;
+}
