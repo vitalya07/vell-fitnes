@@ -1,0 +1,48 @@
+.about {
+    padding: 60px 0 80px 0;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text {
+        width: 40%;
+    }
+    &__title {
+        margin-bottom: 40px;
+    }
+    &__subtitle {
+        @include fontRegular;
+        font-size: 34px;
+        line-height: 140%;
+        color: $grayColor2;
+        margin-bottom: 20px;
+    }
+    &__paragraph {
+        @include fontRegular;
+        font-size: 18px;
+        line-height: 150%;
+        color: $grayColor2;
+        margin-bottom: 40px;
+    }
+    &__btn {
+        width: 204px;
+        height: 42px;
+        padding: 12px 15px;
+        gap: 10px;
+        border-radius: 4px;
+        border: 1px solid $colorRed;
+        @include flexCenter;
+        @include fontBold;
+        font-size: 14px;
+        line-height: 100%;
+        color: $colorRed;
+        transition: all .4s ease;
+        &:hover {
+            box-shadow: 0 0 10px $colorRed;
+        }
+    }
+    &__img {
+        width: 55%;        
+    }
+}
