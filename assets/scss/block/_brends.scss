@@ -1,0 +1,48 @@
+.brends {
+    padding: 120px 0 30px 0;
+    border-bottom: 1px solid $grayColor4;
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &-item {
+            @include fontMedium;
+            font-size: 16px;
+            line-height: 130%;
+            color: $grayColor2;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    &__item {
+        width: 282px;
+        height: 170px;
+        background-color: $colorWhite;
+        border: 1px solid $grayColor4;
+        @include flexCenter;
+    }
+    &__link {
+        width: 125px;
+        height: 42px;
+        padding: 12px 20px;
+        border-radius: 4px;
+        border: 1px solid $colorRed;
+        @include fontBold;
+        font-size: 14px;
+        line-height: 100%;
+        color: $colorRed;
+        transition: all .4s ease;
+        &:hover {
+            box-shadow: 0 0 10px $colorRed;
+        }
+    }
+}
