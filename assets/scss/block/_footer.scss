@@ -1,0 +1,162 @@
+.footer {
+    padding: 80px 0 60px 0;
+    background-color: $colorBlack;
+    &__wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        border-bottom: 1px solid #858FA426;
+        padding-bottom: 30px;
+    }
+    &__menus {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 30px;
+    }
+    &__menu {
+        width: 210px;
+        &-title {
+            @include fontMedium;
+            font-size: 16px;
+            line-height: 130%;
+            color: $colorWhite;
+            margin-bottom: 30px;
+        }
+        &-list {
+            & > li {
+                margin-bottom: 12px;
+                position: relative;
+                & > a {
+                    @include fontMedium;
+                    font-size: 16px;
+                    line-height: 130%;
+                    color: $grayColor3;
+                    transition:  all .4s ease;
+                    &:hover {                        
+                        color: $colorWhite;
+                    }
+                }
+                
+            }
+        }
+    }
+    &__feedback {
+        &-subscribe {
+            width: 255px;
+            height: 48px;
+            border-radius: 5px;
+            background-color: #858FA426;  
+            display: flex;
+           align-items: center;
+           justify-content: center;      
+           gap: 19px;  
+           margin-bottom: 50px;
+            &--text {
+                @include fontRegular;
+                font-size: 14px;
+                line-height: 140%;
+                color: #858FA4;
+            }
+        }
+        &-box {
+            margin-bottom: 50px;
+        }
+        &-phone {
+            display: block;
+            @include fontMedium;
+            font-size: 16px;
+            line-height: 140%;
+            color: #858FA4;
+            margin-bottom: 8px;
+        }
+        &-btn {
+            display: block;
+            @include fontRegular;
+            font-size: 14px;
+            line-height: 140%;
+            color: $colorWhite;
+            transition: all .4s ease;
+            &:hover {
+                color: $colorRed;
+            }
+            &--first {
+                margin-bottom: 23px;
+            }
+        }
+        &-mail {
+            display: block;
+            @include fontMedium;
+            font-size: 16px;
+            line-height: 140%;
+            color: #858FA4;
+            margin-bottom: 8px;
+        }
+        &-policy {
+            &--link {
+                display: block;
+                @include fontRegular;
+                font-size: 14px;
+                line-height: 140%;
+                color: #4B7EE8;
+                margin-bottom: 7px;
+            }
+        }
+    }
+    &__flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0 17px 0;
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+    &__dillers {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;
+        &-btn {
+            &--partner {
+                width: 142px;
+                height: 37px;
+                border-radius: 6px;
+                padding: 10px;
+                background-color: #384255;
+                @include flexCenter;
+                @include fontBold;
+                font-size: 14px;
+                line-height: 100%;
+                color: $colorWhite;
+            }
+            &--diller {
+                width: 112px;
+                height: 37px;
+                border-radius: 6px;
+                border: 1px solid #909CB580;
+                @include flexCenter;
+                @include fontBold;
+                font-size: 14px;
+                line-height: 100%;
+                color: #909CB580;
+
+            }
+        }
+    }
+    &__pay {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 30px;
+    }
+    &__copyright {
+       @include fontRegular;
+        font-size: 14px;
+        line-height: 140%;
+        color: #858FA4;
+    }
+}
