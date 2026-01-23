@@ -1,15 +1,9 @@
-const header = document.querySelector('.header__wrapper');
-let i = 0
-function fixedMenu() {
-    
-}
+const headerWrapper = document.querySelector('.header');
 
-document.addEventListener(scrollY, ()=> {
-   if(window.scrollY >= 800) {
-        header.style.position = 'fixed'
-    } 
-    console.log(window.scrollY)
-})  
-    
-
-console.log(window.scrollY)
+window.addEventListener('scroll', ()=> {
+    if(window.scrollY > 1200) {
+        headerWrapper.style.position = 'fixed';
+    } else {
+        headerWrapper.style.position = 'static';
+    }
+})

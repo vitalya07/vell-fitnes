@@ -101,6 +101,8 @@ ul {
 .header {
   padding: 24px 0 0 0;
   background-color: #1A1A25;
+  width: 100%;
+  z-index: 20;
 }
 .header__wrapper {
   display: -webkit-box;
