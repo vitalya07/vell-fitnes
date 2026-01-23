@@ -98,11 +98,18 @@ ul {
   color: #1A1A25;
 }
 
+.block {
+  display: none;
+  width: 100%;
+}
+
 .header {
   padding: 24px 0 0 0;
   background-color: #1A1A25;
   width: 100%;
   z-index: 20;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 .header__wrapper {
   display: -webkit-box;

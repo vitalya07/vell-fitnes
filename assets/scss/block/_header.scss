@@ -3,6 +3,7 @@
     background-color: $colorBlack;
     width: 100%;
     z-index: 20;
+    transition: all .8s ease;
     &__wrapper {
         display: flex;
         align-items: center;
