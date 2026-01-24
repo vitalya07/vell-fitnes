@@ -87,17 +87,48 @@
         </header>
         <header class="header__table">
             <div class="container">
-                <div class="header__wrapper">
-                    <div class="header__left">
+                <div class="header__table-wrapper">
+                    <!-- логотип и выбор номера начало-->
+                    <div class="header__table-left">
                         <img src="assets/icons/logo-table.png" alt="Логотип сайта на планшете" width="200" height="19" class="header__table-logo custom-logo">
-                        <div class="header__table-select">
-                            <select name="header__select" id="select">
-                                <option value="Москва">Москва</option>
-                                <option value="Москва">Регионы</option>
+                        <div class="header__table-selects">
+                            <select name="header__table-select" id="select" class="header__table-select">
+                                <option value="Москва" class="header__table-select--value">Москва</option style="color: #858FA4;">
+                                <option value="Москва" class="header__table-select--value">Регионы</option>
                             </select>
                         </div>
-                    </div>                    
-
+                    </div>   
+                    <!-- логотип и выбор номера конец-->                 
+                    <div class="header__table-right">
+                        <!-- кнопка поиска начало -->
+                        <button class="header__table-right--btn header__table-right--search">
+                            <img src="assets/icons/search.svg" alt="Поиск по сайту" width="21" height="20" loading="lazy">
+                        </button>
+                        <!-- кнопка поиска конец -->
+                        <!-- Меню сравнения избраного и корзины начало -->
+                        <div class="header__table-right--menu">
+                            <button class="header__table-right--btn header__table-right--comparison">
+                                <img src="assets/icons/comparison.svg" alt="Сравнить товары" width="17" height="17" loading="lazy">
+                                <span>0</span>
+                            </button>
+                            <button class="header__table-right--btn header__table-right--like">
+                                <img src="assets/icons/heart.svg" alt="Сравнить товары" width="24" height="20" loading="lazy">
+                                <span>0</span>
+                            </button>
+                            <button class="header__table-right--btn header__table-right--cart">
+                                <img src="assets/icons/cart.svg" alt="Сравнить товары" width="21" height="24" loading="lazy">
+                                <span>0</span>
+                            </button>
+                        </div>
+                        <!-- Меню сравнения избраного и корзины конец -->
+                        <!-- Меню гамбургер начало -->
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <!-- Меню гамбургер конец -->
+                    </div>
                 </div>                
             </div>
         </header>

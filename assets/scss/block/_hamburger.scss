@@ -1,0 +1,24 @@
+.hamburger {
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    display: none;
+    & > span {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $colorWhite;
+        &:first-child {
+            top: 0;
+        }
+        &:nth-child(2) {
+            top: 7px;
+        }
+        &:last-child {
+            top: 14px;
+        }
+    }
+}

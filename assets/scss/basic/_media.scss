@@ -1,0 +1,129 @@
+@media (max-width: 960px) {
+    .ideas {
+        display: none;
+    }
+    .brends {
+        display: none;
+    }
+    .help {
+        display: none;
+    }
+    .about {
+        display: none;
+    }
+    .partner {
+        display: none;
+    }
+    .news {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+    .container {
+        max-width: 940px;
+    }
+    .header {
+        display: none;
+        &__table {
+            display: block;
+        }
+    }
+    .hamburger {
+        display: block;
+    }
+    .main {
+        padding: 20px 20px 80px 20px;
+        &__bg {
+            width: 100%;
+            height: 320px;
+            max-width: 940px;
+        }
+        &__title {
+            font-size: 14px;
+            top: 54px;
+            left: 35px;
+        }
+        &__subtitle {
+            top: 80px;
+            left: 35px;
+            font-size: 26px;
+            max-width: 268px;
+        }
+        &__btn {
+            width: 146px;
+            height: 42px;
+            left: 35px;
+            bottom: 69px;
+            padding: 0;
+        }
+    }
+    .exerciser {
+        padding: 0 0 80px 0;
+        &__item {
+            width: 220px;
+            &-title {
+                font-size: 13px;
+                top: 27px;
+                left: 20px;
+            }
+        }
+        &__grid {
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        &__wrapper {
+            &-item {
+                &--img {
+                    width: 220px;
+                    height: 190px;
+                    & > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &--title {
+                    font-size: 13px;
+                    top: 20px;
+                    left: 20px;
+                }
+            }
+        }
+    }
+    .fitnes {
+        &__wrapper {
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        &__item {
+            width: 220px;
+            height: 190px;
+            &-title {
+                font-size: 13px;
+                top: 20px;
+                left: 20px;
+                max-width: 166px;
+            }
+            &-1 {
+                width: 460px;               
+            }           
+            &-img {
+                width: 100%;
+                height: 100%;
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .special {
+        &__slider {
+            &-item {
+                width: 270px;
+            }
+        }
+    }
+}
